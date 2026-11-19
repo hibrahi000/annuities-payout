@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+dist/
+build/
+coverage/
+*.tsbuildinfo
+.localstack/
+.aws-sam/
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

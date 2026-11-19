@@ -1,0 +1,11 @@
+{
+  "name": "annuities-payout-workspace",
+  "private": true,
+  "scripts": {
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "server:dev": "npm --prefix server run dev",
+    "client:dev": "npm --prefix client run dev",
+    "dev:all": "docker compose up -d && npx --yes concurrently -k -n server,client -c cyan,green \"npm --prefix server run dev\" \"npm --prefix client run dev\""
+  }
+}
